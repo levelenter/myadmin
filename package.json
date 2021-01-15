@@ -1,0 +1,26 @@
+{
+  "name": "myadmin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prod:sv": "./node_modules/pm2/bin/pm2 start pm2.config.json --log-date-format 'DD-MM HH:mm:ss.SSS'",
+    "prod:del": "./node_modules/pm2/bin/pm2 del 0",
+    "dev" : "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levelenter/myadmin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/levelenter/myadmin/issues"
+  },
+  "homepage": "https://github.com/levelenter/myadmin#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-mysql-admin": "^0.1.8",
+    "pm2": "^4.5.1"
+  }
+}
